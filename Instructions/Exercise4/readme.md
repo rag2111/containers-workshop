@@ -28,7 +28,7 @@ az containerapp env create --name <your-env-name> --resource-group <your-resourc
 Deploy your application to Azure Container Apps:
 
 ```sh
-az containerapp create --name <your-app-name> --resource-group <your-resource-group-name> --environment <your-env-name> --image <your-acr-name>.azurecr.io/<your-image-name>:<tag> --registry-server ragworkshopacr.azurecr.io --system-assigned --target-port 8080 --ingress 'external'
+az containerapp create --name <your-app-name> --resource-group <your-resource-group-name> --environment <your-env-name> --image <your-acr-name>.azurecr.io/<your-image-name>:<tag> --registry-server <your-acr-name>.azurecr.io --system-assigned --target-port 8080 --ingress 'external'
 ```
 
 ### 4. Verify the Deployment

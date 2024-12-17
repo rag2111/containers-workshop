@@ -63,7 +63,7 @@ spec:
       - name: myapp
         image: <your-acr-name>.azurecr.io/<your-image-name>:<tag>
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ```
 
 Apply the deployment file to your AKS cluster:

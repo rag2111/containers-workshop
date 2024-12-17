@@ -42,7 +42,7 @@
     WORKDIR /app
     COPY --from=build /app/out .
 
-    EXPOSE 80
+    EXPOSE 8080
     ENTRYPOINT ["dotnet", "HelloWorld.dll"]
     ```
 
@@ -53,7 +53,7 @@
 
 6. **Run the Docker container:**
     ```bash
-    docker run -d -p 8080:80 helloworld-dotnet:1-0
+    docker run -d -p 5000:8080 helloworld-dotnet:1-0
     ```
 
 Done! Now you have a "Hello World" application in .NET 8 running in a Docker container.
